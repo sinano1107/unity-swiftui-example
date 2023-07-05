@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FB627CD2A54F83300D9668E /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB627CC2A54F83300D9668E /* UnityFramework.framework */; };
+		9FB627CE2A54F83300D9668E /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB627CC2A54F83300D9668E /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FFF3DD02A5399390043BBCE /* Unity_swiftui_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3DCF2A5399390043BBCE /* Unity_swiftui_exampleApp.swift */; };
 		9FFF3DD22A5399390043BBCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3DD12A5399390043BBCE /* ContentView.swift */; };
 		9FFF3DD42A53993A0043BBCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF3DD32A53993A0043BBCE /* Assets.xcassets */; };
 		9FFF3DD72A53993A0043BBCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF3DD62A53993A0043BBCE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9FB627CF2A54F83300D9668E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9FB627CE2A54F83300D9668E /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9FB627CC2A54F83300D9668E /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFF3DCC2A5399390043BBCE /* Unity-swiftui-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unity-swiftui-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFF3DCF2A5399390043BBCE /* Unity_swiftui_exampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unity_swiftui_exampleApp.swift; sourceTree = "<group>"; };
 		9FFF3DD12A5399390043BBCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB627CD2A54F83300D9668E /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F9875442A53DA3F00D99996 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FB627CC2A54F83300D9668E /* UnityFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FFF3DC32A5399390043BBCE = {
 			isa = PBXGroup;
 			children = (
 				9FFF3DCE2A5399390043BBCE /* Unity-swiftui-example */,
 				9FFF3DCD2A5399390043BBCE /* Products */,
+				9F9875442A53DA3F00D99996 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +104,7 @@
 				9FFF3DC82A5399390043BBCE /* Sources */,
 				9FFF3DC92A5399390043BBCE /* Frameworks */,
 				9FFF3DCA2A5399390043BBCE /* Resources */,
+				9FB627CF2A54F83300D9668E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
