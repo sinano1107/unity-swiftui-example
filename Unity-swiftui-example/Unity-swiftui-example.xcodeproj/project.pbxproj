@@ -11,6 +11,8 @@
 		9FB627CE2A54F83300D9668E /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB627CC2A54F83300D9668E /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FB627D12A54F97200D9668E /* Unity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB627D02A54F97200D9668E /* Unity.swift */; };
 		9FB627D32A54FE3100D9668E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB627D22A54FE3100D9668E /* AppDelegate.swift */; };
+		9FB627D52A55014200D9668E /* UnityLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB627D42A55014200D9668E /* UnityLaunchScreen.storyboard */; };
+		9FB627D92A55106700D9668E /* UnityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB627D82A55106700D9668E /* UnityViewController.swift */; };
 		9FFF3DD02A5399390043BBCE /* Unity_swiftui_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3DCF2A5399390043BBCE /* Unity_swiftui_exampleApp.swift */; };
 		9FFF3DD22A5399390043BBCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3DD12A5399390043BBCE /* ContentView.swift */; };
 		9FFF3DD42A53993A0043BBCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFF3DD32A53993A0043BBCE /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		9FB627CC2A54F83300D9668E /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB627D02A54F97200D9668E /* Unity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unity.swift; sourceTree = "<group>"; };
 		9FB627D22A54FE3100D9668E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FB627D42A55014200D9668E /* UnityLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UnityLaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FB627D82A55106700D9668E /* UnityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityViewController.swift; sourceTree = "<group>"; };
 		9FFF3DCC2A5399390043BBCE /* Unity-swiftui-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unity-swiftui-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFF3DCF2A5399390043BBCE /* Unity_swiftui_exampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unity_swiftui_exampleApp.swift; sourceTree = "<group>"; };
 		9FFF3DD12A5399390043BBCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,7 +89,9 @@
 				9FB627D22A54FE3100D9668E /* AppDelegate.swift */,
 				9FFF3DCF2A5399390043BBCE /* Unity_swiftui_exampleApp.swift */,
 				9FFF3DD12A5399390043BBCE /* ContentView.swift */,
+				9FB627D82A55106700D9668E /* UnityViewController.swift */,
 				9FB627D02A54F97200D9668E /* Unity.swift */,
+				9FB627D42A55014200D9668E /* UnityLaunchScreen.storyboard */,
 				9FFF3DD32A53993A0043BBCE /* Assets.xcassets */,
 				9FFF3DD52A53993A0043BBCE /* Preview Content */,
 			);
@@ -160,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FFF3DD72A53993A0043BBCE /* Preview Assets.xcassets in Resources */,
+				9FB627D52A55014200D9668E /* UnityLaunchScreen.storyboard in Resources */,
 				9FFF3DD42A53993A0043BBCE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +182,7 @@
 				9FFF3DD22A5399390043BBCE /* ContentView.swift in Sources */,
 				9FB627D12A54F97200D9668E /* Unity.swift in Sources */,
 				9FFF3DD02A5399390043BBCE /* Unity_swiftui_exampleApp.swift in Sources */,
+				9FB627D92A55106700D9668E /* UnityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +317,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = UnityLaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,6 +347,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = UnityLaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
