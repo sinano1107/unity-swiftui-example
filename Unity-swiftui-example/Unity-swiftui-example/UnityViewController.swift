@@ -9,12 +9,21 @@ import SwiftUI
 
 struct UnityViewController: UIViewControllerRepresentable {
     private let vc = UIViewController()
-    private let unityView = Unity.shared.view
     
     func makeUIViewController(context: Context) -> some UIViewController {
-        vc.view?.addSubview(unityView)
+#if WITH_Unity
+        let unityView = Unity.shared.view
+        vc.view.addSubview(unityView)
         unityView.frame = vc.view.bounds
         vc.view.sendSubviewToBack(unityView)
+#else
+        let label = UILabel(frame: vc.view.bounds)
+        label.backgroundColor = .cyan.withAlphaComponent(0.5)
+        label.numberOfLines = 2
+        label.textAlignment = .center
+        label.text = "This is Unity View.\nBut now using NON_Unity target."
+        vc.view.addSubview(label)
+#endif
         return vc
     }
     

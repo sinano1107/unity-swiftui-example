@@ -5,6 +5,7 @@
 //  Created by 長政輝 on 2023/07/05.
 //
 
+#if WITH_Unity
 import Foundation
 import UnityFramework
 
@@ -68,3 +69,4 @@ class Unity: NSObject, UnityFrameworkListener {
         unityFramework.appController().applicationWillTerminate(application)
     }
 }
+#endif
