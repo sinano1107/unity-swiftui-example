@@ -16,8 +16,19 @@ struct ContentView: View {
                     .foregroundColor(.accentColor)
                 Text("Hello, world!")
                 NavigationLink("Unity") {
-                    UnityViewController()
-                        .edgesIgnoringSafeArea(.all)
+                    ZStack {
+                        UnityViewController()
+                            .edgesIgnoringSafeArea(.all)
+                        VStack {
+                            Spacer()
+                            Button("メッセージ") {
+#if WITH_Unity
+                                Unity.shared.sendMessageToUnity(objectName: "APIEntryPoint", functionName: "ReceiveMessage", argument: "Hello I'm SwiftUI!")
+#endif
+                            }
+                        }
+                        
+                    }
                 }
             }
             .padding()
